@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import PhotoGallery from "@/components/PhotoGallery";
 
 const CoupleStory = () => {
   return (
@@ -53,6 +54,20 @@ const CoupleStory = () => {
               <div className="text-purple-500 font-medium">Май 2024</div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Photo Gallery Section */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h3 className="font-cormorant text-3xl text-gray-800 mb-4">
+              Наши моменты
+            </h3>
+            <div className="w-12 h-px bg-purple-300 mx-auto mb-4"></div>
+            <p className="text-gray-600">
+              Поделитесь с нами вашими любимыми фотографиями
+            </p>
+          </div>
+          <PhotoGallery />
         </div>
 
         <div className="mt-12 text-center">
